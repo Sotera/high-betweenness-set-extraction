@@ -25,7 +25,7 @@ For background information on the approximation method see:
 Implementation
 ---------------------
 
-Our implementation is distributed using the BSP method on Appache giraph and built with Gradle.  Giraph requires a Hadoop cluster (map reduce and hdfs)
+Our implementation is distributed using the BSP method on Apache giraph and built with Gradle.  Giraph requires a Hadoop cluster (map reduce and hdfs)
 
 
 
