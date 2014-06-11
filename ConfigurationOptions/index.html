@@ -1,0 +1,50 @@
+---
+layout: base
+---
+<h3><a name="configuration-options" class="anchor" href="#configuration-options"><span class="octicon octicon-link"></span></a>Configuration Options</h3>
+<p>For custom configuration options pass them into giraph runner as -ca arguments (see run.sh script provided for easy running).</p>
+<p> The following is a list of custom arguments and their defaults.</p>
+<ul>
+    <li>
+        fs.defaultFS OR fs.default.name
+        <p>The default hdfs file system, normally this will not need to be set as it will correctly be read from the environment.</p>
+    </li>
+    <li>
+        betweenness.output.dir
+        <p>
+            Directory in HDFS used to write the high betweenness set.
+        </p>
+    </li>
+    <li>
+        betweenness.set.stability
+        <p>
+            Integer value, algorithm completes with the high betweenness set changes by less than this value, checked after each cycle.
+        </p>
+    </li>
+    <li>
+        betweenness.set.stability.counter
+        <p>
+            Integer value, number of times the stability threshold must be reached.
+        </p>
+    </li>
+    <li>
+        betweenness.set.maxSize
+        <p>
+            Size of the result set desired
+        </p>
+    </li>
+    <li>
+        pivot.batch.size
+        <p>
+            Number of pivots to use in each batch.
+        </p>
+    </li>
+    <li>
+        pivot.batch.size.initial
+        <p>Number of pivots to use in the initial batch. defaults to pivot.batch.size</p>
+    </li>
+    <li>
+        vertex.count
+        <p>Number of vertices in the graph</p>
+    </li>
+</ul>
